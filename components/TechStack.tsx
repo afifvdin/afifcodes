@@ -1,11 +1,9 @@
 "use client"
 
 import { useRef, useEffect, useState } from "react"
-import { barlow } from "@/app/fonts"
 import Image from "next/image"
 
 export default function TechStack() {
-  const [prevSize, setPrevSize] = useState(0)
   const sliderRef = useRef<HTMLDivElement | null>(null)
   const [multipler, setMultipler] = useState(1)
   const devs = [
@@ -36,12 +34,9 @@ export default function TechStack() {
   useEffect(() => {
     if (!sliderRef) return
     doHandleResize()
-  }, [sliderRef])
-
-  useEffect(() => {
     window.addEventListener("resize", doHandleResize)
     return () => window.removeEventListener("resize", doHandleResize)
-  }, [prevSize])
+  }, [sliderRef])
 
   return (
     <div className="mt-4">
