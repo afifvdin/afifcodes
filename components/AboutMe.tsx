@@ -16,7 +16,7 @@ export default function AboutMe() {
             Hey there *waves*, my name is Afif, software engineer, mostly
             frontend & mobile dev
           </p>
-          <p className="font-medium mt-8 mb-24">
+          <p className="font-normal sm:font-medium mt-8 mb-24 leading-loose">
             I&apos;m passionate about creating seamless connections between
             technology and users. Specializing in frontend and mobile
             development, I excel at building user-friendly interfaces that{" "}
