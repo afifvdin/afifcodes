@@ -19,7 +19,7 @@ export default function BackToTop() {
         <IconSquareArrowUpFilled className="h-8 w-8 text-slate-600" />
       </button>
       <p className="text-xs font-circular text-slate-600 font-medium">
-        You've reached bottom of the page
+        You&apos;ve reached bottom of the page
       </p>
     </div>
   )
