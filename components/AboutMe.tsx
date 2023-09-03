@@ -17,7 +17,7 @@ export default function AboutMe() {
             frontend & mobile dev
           </p>
           <p className="font-medium mt-8 mb-24">
-            I'm passionate about creating seamless connections between
+            I&apos;m passionate about creating seamless connections between
             technology and users. Specializing in frontend and mobile
             development, I excel at building user-friendly interfaces that{" "}
             <span className="underline underline-offset-4">
