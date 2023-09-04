@@ -122,7 +122,7 @@ export default function MyWorks() {
               title="Lenjhelenan"
               desc="Traveloka-like website exclusive for madura island."
               image_url="/images/lenjhelenan.png"
-              link="#"
+              link="https://xlenjhelenan.vercel.app"
               platform={["web"]}
             />
           </SwiperSlide>
