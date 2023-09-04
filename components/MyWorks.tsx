@@ -188,7 +188,7 @@ type CardPropsType = {
 
 const Card = ({ title, desc, image_url, link, platform }: CardPropsType) => {
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col cursor-pointer">
       <div className="aspect-[4/5] relative">
         <Image
           src={image_url}
@@ -212,7 +212,11 @@ const Card = ({ title, desc, image_url, link, platform }: CardPropsType) => {
       </p>
       <div className="flex-grow flex flex-col justify-between">
         <p className="text-sm mt-2 mb-4">{desc}</p>
-        <Link href={link} className="underline font-medium">
+        <Link
+          href={link}
+          target="_blank"
+          className="w-min underline underline-offset-1 hover:underline-offset-4 transition-all font-medium"
+        >
           Visit
         </Link>
       </div>
