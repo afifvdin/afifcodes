@@ -32,7 +32,7 @@ export default function Experience() {
             sizes="auto"
             className="object-cover"
           />
-          <Button>Unvolds</Button>
+          <Button invert>Unvolds</Button>
         </div>
         <div className="relative aspect-square lg:aspect-auto">
           <Image
@@ -50,17 +50,24 @@ export default function Experience() {
 }
 
 interface ButtonInterface {
+  invert?: boolean
   children: React.ReactNode
 }
 
-const Button = ({ children }: ButtonInterface) => {
+const Button = ({ invert, children }: ButtonInterface) => {
   return (
     <div className="uppercase text-sm absolute top-0 left-0 w-full h-full flex flex-col items-center justify-end p-8">
       <Link
         href="#"
-        className="transition-all px-4 py-2.5 bg-neutral-900 text-white flex items-center justify-center gap-4 hover:gap-6 relative"
+        className={`transition-all px-4 py-2.5 flex items-center justify-center gap-4 hover:gap-6 relative ${
+          invert ? "bg-white text-neutral-900" : "bg-neutral-900 text-white"
+        }`}
       >
-        <div className="absolute left-0.5 top-0.5 w-full h-full border border-neutral-900" />
+        <div
+          className={`absolute left-0.5 top-0.5 w-full h-full border ${
+            invert ? "border-white" : "border-neutral-900"
+          }`}
+        />
         <span>{children}</span>
         <IconArrowNarrowRight className="h-6 w-6" />
       </Link>
