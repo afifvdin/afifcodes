@@ -130,7 +130,7 @@ export default function MyWorks() {
             <Card
               title="FutureMinded"
               desc="Community helper app to help picking college majors."
-              image_url="/images/underdev.png"
+              image_url="/images/futureminded.png"
               link="#"
               platform={["android"]}
             />
@@ -139,7 +139,7 @@ export default function MyWorks() {
             <Card
               title="Unvolds"
               desc="UNet VGG-19 based lung detection software on digital x-ray images."
-              image_url="/images/underdev.png"
+              image_url="/images/unvolds-web.png"
               link="#"
               platform={["web", "desktop", "android"]}
             />
@@ -148,7 +148,7 @@ export default function MyWorks() {
             <Card
               title="Dovtron"
               desc="Disease detection applicationn on corn leaves."
-              image_url="/images/underdev.png"
+              image_url="/images/dovtron.png"
               link="#"
               platform={["android"]}
             />
@@ -166,7 +166,7 @@ export default function MyWorks() {
             <Card
               title="Devid"
               desc="VGG-based lung detection app based on digital x-ray images."
-              image_url="/images/underdev.png"
+              image_url="/images/devid.png"
               link="#"
               platform={["android"]}
             />

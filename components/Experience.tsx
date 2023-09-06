@@ -1,23 +1,9 @@
-"use client"
-
 import { barlow } from "@/app/fonts"
 import { IconArrowNarrowRight } from "@tabler/icons-react"
 import Image from "next/image"
 import Link from "next/link"
-import React, { useRef } from "react"
 
 export default function Experience() {
-  const videoRef = useRef<HTMLVideoElement | null>(null)
-
-  const handleMouseEnter = () => {
-    videoRef.current!.play()
-  }
-
-  const handleMouseLeave = () => {
-    videoRef.current!.pause()
-    videoRef.current!.currentTime = 0
-  }
-
   return (
     <div>
       <div
@@ -38,27 +24,14 @@ export default function Experience() {
           />
           <Button>NxUI</Button>
         </div>
-        <div
-          className="relative aspect-square lg:aspect-auto cursor-pointer"
-          // onMouseEnter={handleMouseEnter}
-          // onMouseLeave={handleMouseLeave}
-        >
+        <div className="relative aspect-square lg:aspect-auto">
           <Image
-            src="/images/underdev.png"
+            src="/images/unvolds-web.png"
             fill
             alt="afifcodes"
             sizes="auto"
             className="object-cover"
           />
-          {/* <video
-            muted
-            loop
-            playsInline
-            ref={videoRef}
-            className="object-cover h-full w-full"
-          >
-            <source src="/videos/unvolds-mobile.mp4" type="video/mp4" />
-          </video> */}
           <Button>Unvolds</Button>
         </div>
         <div className="relative aspect-square lg:aspect-auto">
