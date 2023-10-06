@@ -16,23 +16,13 @@ export default function Experience() {
       <div className="flex flex-col lg:grid grid-cols-3 w-full lg:h-[28rem] gap-8 py-4 px-4 sm:px-8">
         <div className="relative aspect-square lg:aspect-auto">
           <Image
-            src="/images/underdev.png"
-            fill
-            alt="afifcodes"
-            sizes="auto"
-            className="object-cover"
-          />
-          <Button>NxUI</Button>
-        </div>
-        <div className="relative aspect-square lg:aspect-auto">
-          <Image
             src="/images/unvolds-web.png"
             fill
             alt="afifcodes"
             sizes="auto"
             className="object-cover"
           />
-          <Button invert>Unvolds</Button>
+          <Button url="https://unvolds.vercel.app" invert>Unvolds</Button>
         </div>
         <div className="relative aspect-square lg:aspect-auto">
           <Image
@@ -42,7 +32,17 @@ export default function Experience() {
             sizes="auto"
             className="object-cover"
           />
-          <Button>Lenjhelenan</Button>
+          <Button url="https://xlenjhelenan.vercel.app">Lenjhelenan</Button>
+        </div>
+        <div className="relative aspect-square lg:aspect-auto">
+          <Image
+            src="/images/dovtron.png"
+            fill
+            alt="afifcodes"
+            sizes="auto"
+            className="object-cover"
+          />
+          <Button url="https://play.google.com/store/apps/details?id=com.nanx_studio.dovtron">Dovtron</Button>
         </div>
       </div>
     </div>
@@ -51,14 +51,16 @@ export default function Experience() {
 
 interface ButtonInterface {
   invert?: boolean
+  url: string
   children: React.ReactNode
 }
 
-const Button = ({ invert, children }: ButtonInterface) => {
+const Button = ({ invert, url, children }: ButtonInterface) => {
   return (
     <div className="uppercase text-sm absolute top-0 left-0 w-full h-full flex flex-col items-center justify-end p-8">
       <Link
-        href="#"
+        href={url}
+        target="_blank"
         className={`transition-all px-4 py-2.5 flex items-center justify-center gap-4 hover:gap-6 relative ${
           invert ? "bg-white text-neutral-900" : "bg-neutral-900 text-white"
         }`}
