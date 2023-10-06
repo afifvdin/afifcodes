@@ -92,33 +92,6 @@ export default function MyWorks() {
         >
           <SwiperSlide>
             <Card
-              title="NxUI"
-              desc="Looking-clean TailwindCSS-based React Components built with TypeScript."
-              image_url="/images/underdev.png"
-              link="#"
-              platform={["web"]}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              title="Web Yaqin"
-              desc="Yaqin's Website."
-              image_url="/images/underdev.png"
-              link="#"
-              platform={["web"]}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
-              title="Mobile Lelang"
-              desc="Goverment's auction app for managing relief."
-              image_url="/images/underdev.png"
-              link="#"
-              platform={["android"]}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Card
               title="Lenjhelenan"
               desc="Traveloka-like website exclusive for madura island."
               image_url="/images/lenjhelenan.png"
@@ -131,7 +104,7 @@ export default function MyWorks() {
               title="FutureMinded"
               desc="Community helper app to help picking college majors."
               image_url="/images/futureminded.png"
-              link="#"
+              link="https://github.com/futmin/androidapp"
               platform={["android"]}
             />
           </SwiperSlide>
@@ -140,7 +113,7 @@ export default function MyWorks() {
               title="Unvolds"
               desc="UNet VGG-19 based lung detection software on digital x-ray images."
               image_url="/images/unvolds-web.png"
-              link="#"
+              link="https://unvolds.vercel.app"
               platform={["web", "desktop", "android"]}
             />
           </SwiperSlide>
@@ -149,7 +122,7 @@ export default function MyWorks() {
               title="Dovtron"
               desc="Disease detection applicationn on corn leaves."
               image_url="/images/dovtron.png"
-              link="#"
+              link="https://play.google.com/store/apps/details?id=com.nanx_studio.dovtron"
               platform={["android"]}
             />
           </SwiperSlide>
@@ -158,7 +131,7 @@ export default function MyWorks() {
               title="LabTI"
               desc="Loan manager for industrial engineering lab."
               image_url="/images/labti.png"
-              link="#"
+              link="https://labti.vercel.app"
               platform={["web"]}
             />
           </SwiperSlide>
@@ -167,7 +140,7 @@ export default function MyWorks() {
               title="Devid"
               desc="VGG-based lung detection app based on digital x-ray images."
               image_url="/images/devid.png"
-              link="#"
+              link="https://play.google.com/store/apps/details?id=com.utm.teknik.devid"
               platform={["android"]}
             />
           </SwiperSlide>
