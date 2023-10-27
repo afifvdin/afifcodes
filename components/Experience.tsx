@@ -1,7 +1,7 @@
-import { barlow } from "@/app/fonts"
-import { IconArrowNarrowRight } from "@tabler/icons-react"
-import Image from "next/image"
-import Link from "next/link"
+import { barlow } from "@/app/fonts";
+import { IconArrowNarrowRight } from "@tabler/icons-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Experience() {
   return (
@@ -16,16 +16,6 @@ export default function Experience() {
       <div className="flex flex-col lg:grid grid-cols-3 w-full lg:h-[28rem] gap-8 py-4 px-4 sm:px-8">
         <div className="relative aspect-square lg:aspect-auto">
           <Image
-            src="/images/unvolds-web.png"
-            fill
-            alt="afifcodes"
-            sizes="auto"
-            className="object-cover"
-          />
-          <Button url="https://unvolds.vercel.app" invert>Unvolds</Button>
-        </div>
-        <div className="relative aspect-square lg:aspect-auto">
-          <Image
             src="/images/lenjhelenan.png"
             fill
             alt="afifcodes"
@@ -36,23 +26,37 @@ export default function Experience() {
         </div>
         <div className="relative aspect-square lg:aspect-auto">
           <Image
+            src="/images/unvolds-web.png"
+            fill
+            alt="afifcodes"
+            sizes="auto"
+            className="object-cover"
+          />
+          <Button url="https://unvolds.vercel.app" invert>
+            Unvolds
+          </Button>
+        </div>
+        <div className="relative aspect-square lg:aspect-auto">
+          <Image
             src="/images/dovtron.png"
             fill
             alt="afifcodes"
             sizes="auto"
             className="object-cover"
           />
-          <Button url="https://play.google.com/store/apps/details?id=com.nanx_studio.dovtron">Dovtron</Button>
+          <Button url="https://play.google.com/store/apps/details?id=com.nanx_studio.dovtron">
+            Dovtron
+          </Button>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 interface ButtonInterface {
-  invert?: boolean
-  url: string
-  children: React.ReactNode
+  invert?: boolean;
+  url: string;
+  children: React.ReactNode;
 }
 
 const Button = ({ invert, url, children }: ButtonInterface) => {
@@ -74,5 +78,5 @@ const Button = ({ invert, url, children }: ButtonInterface) => {
         <IconArrowNarrowRight className="h-6 w-6" />
       </Link>
     </div>
-  )
-}
+  );
+};
